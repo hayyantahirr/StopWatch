@@ -1,0 +1,115 @@
+/* default css  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: #ffffff; */
+  font-family: "PT Sans", sans-serif;
+  text-decoration: none;
+  list-style: none;
+
+  /* border: 1px solid red; */
+}
+
+/* Back Pattren  */
+.container-1 {
+  /* Basic dimensions and centering */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Dark mode colors and gradient */
+  background: #121212; /* Fallback for browsers that don't support gradients */
+  background: linear-gradient(
+    135deg,
+    #121212 25%,
+    #1a1a1a 25%,
+    #1a1a1a 50%,
+    #121212 50%,
+    #121212 75%,
+    #1a1a1a 75%,
+    #1a1a1a
+  );
+  background-size: 40px 40px;
+
+  /* Animation */
+  animation: move 4s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}
+
+/* Main Div  */
+.container {
+  margin-top: 150px;
+  width: 40%;
+  background-color: #cfcfcf;
+  border-radius: 30px;
+}
+.head {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 6.5rem;
+  font-family: "Playfair Display", serif;
+}
+.timer {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 6.5rem;
+}
+span {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 150;
+}
+
+/* Buttons  */
+.btn-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 25px;
+  margin-bottom: 15px;
+}
+button {
+  padding: 17px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  letter-spacing: 3px;
+  background-color: #4e8098;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #90c2e7 0px 7px 29px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+html {
+  font-size: 62.5%;
+}
+img {
+  border-radius: 3px;
+}
